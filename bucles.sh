@@ -1,14 +1,9 @@
 #!/bin/bash
 
-echo "EJERCICIO DE BUCLES"
-read ARCHIVO
+echo "EJERCICIO DE BUCLES Y MD5"
 
-for VARIABLE in saludo.sh patata; do
-	if [ -e $VARIABLE ]; then
-		echo " $VARIABLE"
-	else
-		echo "\e[0;31m$VARIABLE\e[0m"
-	fi
+for VARIABLE in 'ls *.mp4'; do
+	cowsay $VARIABLE
 done
 
 #AQUÍ ABAJO ARCOIRIS
